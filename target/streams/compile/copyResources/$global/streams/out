@@ -1,0 +1,7 @@
+[debug] Copy resource mappings: 
+[debug] 	(/home/paulk4ever/Desktop/play-java/conf/logback.xml,/home/paulk4ever/Desktop/play-java/target/scala-2.11/classes/logback.xml)
+[debug] 	(/home/paulk4ever/Desktop/play-java/conf/evolutions,/home/paulk4ever/Desktop/play-java/target/scala-2.11/classes/evolutions)
+[debug] 	(/home/paulk4ever/Desktop/play-java/conf/routes,/home/paulk4ever/Desktop/play-java/target/scala-2.11/classes/routes)
+[debug] 	(/home/paulk4ever/Desktop/play-java/conf/application.conf,/home/paulk4ever/Desktop/play-java/target/scala-2.11/classes/application.conf)
+[debug] 	(/home/paulk4ever/Desktop/play-java/conf/evolutions/default,/home/paulk4ever/Desktop/play-java/target/scala-2.11/classes/evolutions/default)
+[debug] 	(/home/paulk4ever/Desktop/play-java/conf/evolutions/default/1.sql,/home/paulk4ever/Desktop/play-java/target/scala-2.11/classes/evolutions/default/1.sql)

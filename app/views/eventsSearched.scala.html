@@ -1,0 +1,22 @@
+
+
+@import com.evdb.javaapi.data.Event
+@import java.util
+
+@(list : util.ArrayList[Event])
+
+@*/ add events to the database*@
+<Ol>
+@for(event <- list) {
+    <form action="@routes.EventFullController.addName()" method="POST">
+    <input type="hidden" name="name" value="@event.getTitle"/>
+        <input type="hidden" name="venue" value="@event.getVenueAddress"/>
+        <li>@event.getTitle <br>
+        @event.getVenueAddress
+        </li>
+
+    <input type="submit" value="like"/>
+    <br><br>
+    </form>
+}
+</Ol>

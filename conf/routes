@@ -1,0 +1,23 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /                               controllers.HomeController.index
+
+GET     /showEvents                     controllers.EventFullController.search()
+
+
+
+POST    /addEvents                      controllers.EventFullController.addName()
+
+POST     /delete                         controllers.EventFullController.delete()
+
+#### RESTFULL ROUTES
+
+PUT     /updateVote/:title               controllers.RestfullController.updateVote(title:String)
+
+#POST   /postEvent/:title/:venue/:votes                 controllers.RestfullController.postEvent(title:String)
+
+POST   /postAllEvents/:keyword             controllers.RestfullController.postAllEvents(keyword:String)
+
+DELETE /deleteEntry/:title                controllers.RestfullController.deleteEntry(title:String)

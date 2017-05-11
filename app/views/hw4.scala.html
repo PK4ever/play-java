@@ -1,0 +1,12 @@
+@(message: String, style: String = "java")
+
+@defining(play.core.PlayVersion.current) { version =>
+
+<P>@message</P>
+    <form action="@routes.EventFullController.search()" method="get">
+        Search Event type/name/category etc...:
+        <input type="text" name="Event">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+}

@@ -1,0 +1,19 @@
+
+@(list: List[EventfulModel])
+<Ol>
+@for(event <- list) {
+    <form action="@routes.EventFullController.delete()" method="POST">
+
+        <input type="hidden" name="name" value="@event.getTitle"/>
+        <li>@event.getTitle <br>
+        @event.getVenue()
+        </li>
+        <input type="submit" value="delete"/>
+        <br><br>
+    </form>
+}
+</Ol>
+<form action="@routes.HomeController.index()" method="GET">
+    <input type="submit" value="Back to home page"/>
+    <br><br>
+</form>
